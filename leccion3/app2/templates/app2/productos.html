@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Productos{% endblock %}
+
+{% block content %}
+    <h1>Productos Disponibles</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>
+                <strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}<br>
+                {{ producto.descripcion }}
+            </li>
+        {% endfor %}
+    </ul>
+<a href="/app1/">Ver Sitio inicial</a>
+{% endblock %}
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Productos Disponibles</h1>
+    <ul>
+        {% for producto in productos %}
+            <li>
+                <strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}<br>
+                {{ producto.descripcion }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/app1/">Ver Sitio inicial</a>
+</body>
+</html> -->

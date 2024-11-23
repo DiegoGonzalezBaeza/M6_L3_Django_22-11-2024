@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Amabella</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="/app1/">Home</a>
+          <a class="nav-link" href="/app2/">Productos</a>
+          <a class="nav-link" href="/app3/vista1/">Vista1</a>
+          <a class="nav-link" href="/app3/vista2/">Vista2</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+    <div class="form-check form-switch mx-4">
+        <input
+            class="form-check-input p-2"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+            onclick="funtionDarkLight()"
+        />
+    </div>
+  </nav>
+
+
+  <script>
+    function funtionDarkLight() {
+        var element = document.body;
+        element.dataset.bsTheme = element.dataset.bsTheme == "light" ? "dark" : "light";
+    }
+</script>
